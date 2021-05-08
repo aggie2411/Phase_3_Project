@@ -66,7 +66,7 @@ Each water well is labelled as one of the 3 categories:
 
 ## EDA
 
-![hist.jpeg](attachment:hist.jpeg)
+![hist.jpeg](./images/hist.jpeg)
 
 It is clear from the histogram that this data set suffers from class imbalance, depending on how the government would want to prioritise repairs, this project could easily have focused on one category over the other in terms of performance and selected the best model for a given class. However as the competition metric used is accuracy, this is the one I will be using.
 
@@ -74,15 +74,15 @@ It is clear from the histogram that this data set suffers from class imbalance, 
 
 It looks like when plotting the status of the pumps on the maps there are some patterns emerging, particularly in the South East. Location is likely to be an important feature any model. In this plot, the bigger the marker size, the bigger the population. An interactive version of this map is found in the notebook link above. 
 
-![newplot.png](attachment:newplot.png)
+![newplot.png](./images/newplot.png)
 
 The above map is confirmed by the chart below. It clearly shows the distribution of functional pumps is not equal, some regions have only 30% of pumps functioning where as the best performing region has > 70%.
 
-![pumpregion.jpeg](attachment:pumpregion.jpeg)
+![pumpregion.jpeg](./images/pumpregion.jpeg)
 
 That is not the only feature where there seems to be a strong relationship, the quantity of water also plays a role. this could be mis-classification it is unclear. From a realistic stand point, a dry well isn't functioning, but does that also mean the well wouldn't work if water returned. This is slightly ambiguous but could result in many pumps being incorrectly classified as non functioning.
 
-![pumpquantity.jpeg](attachment:pumpquantity.jpeg)
+![pumpquantity.jpeg](./images/pumpquantity.jpeg)
 
 ## Modelling
 
