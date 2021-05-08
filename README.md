@@ -1,3 +1,9 @@
+### Set up Instructions
+
+
+To run these notebooks independently, I have provided the [environment.yml](environment.yml) to clone the new-env environment which contains all dependencies.
+
+
 # Tanzania Water Pump Classification Project
 
 There are over 56,000 water pumps in Tanzania and the challenge is to create a model that can accurately classify them into the one of the following:
@@ -94,7 +100,7 @@ Several algorithms were experimented with:
 - Decision Tree
 - XGBoost
 
-![summary_table.png](./images/summary_table.png)
+![summary_table.png](./images/summary_table.PNG)
 
 
 
