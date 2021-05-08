@@ -94,3 +94,27 @@ Several algorithms were experimented with:
 - Decision Tree
 - XGBoost
 
+![summary_table.png](./images/summary_table.png)
+
+
+
+## Feature Importance
+
+Checking the feature importance is an important step in the post processing phase, it may highlight some models that have an over reliance on certain features. These features then in turn could warrant further investigation.
+
+![featimportance.jpeg](./images/xgb_feat.jpeg)
+
+
+## Conclusion & Recommendations
+
+- It is recommended to proceed with the tune XGBoost model, this achieved an accuracy score of 0.7747 on the validation data set.
+- The recall values for this model were 85,40,78 for the three categories 'functional', 'functional needs repair' and 'non functional'
+- this clearly means some pumps in need of repair will be getting misclassified however since the score is poorest in the minority class of which there is relatively few entries, it is not going to be too damaging in terms of wasted resources / site visits etc.
+- The X9_Dry feature needs to be investigated, if a well is dry does this mean it automatically non functional?
+
+ - Use the model in conjunction with EDA to prioritise pumps for repair i.e is the model predicting a pump failure, and if so is this supported by other factors, are other wells in the area dry for example?
+ - Attempt to improve recall score for minority class further, use model stacking techniques.
+ - A thorough investigation of the missclassified entries, there may be a common reason the model is getting it wrong, if this can be rectified the model performance would improve dramatically.
+ - It would be recommended to reintroduce some of the dropped features that had high cardinality, there may be a solution to bin these categories and therefore still make use of the data
+ - Expand the parameters in the RandomizedsearchCV in an attempt to improve model performance.
+ - Utilise GridsearchCV again in an attempt to optimise performance, it was avoided in this project due to computing power and time constraints
