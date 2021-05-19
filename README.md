@@ -3,7 +3,7 @@
 
 To run these notebooks independently, I have provided the [environment.yml](environment.yml) to clone the new-env environment which contains all dependencies.
 
-If you want to create all the models that appear in the [Submission notebook](https://github.com/aggie2411/Phase_3_Project/blob/main/Notebooks/Submission.ipynb), notebooks 1-7 would be need to be run first, the models would automatically be stored in the models folder.
+If you want to create all the models that appear in the [Submission notebook](https://github.com/aggie2411/Phase_3_Project/blob/main/Notebooks/8.%20Submission.ipynb), notebooks 1-7 would be need to be run first, the models would automatically be stored in the models folder.
 
 
 # Tanzania Water Pump Classification Project
